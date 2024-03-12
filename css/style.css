@@ -70,11 +70,22 @@ body {
 }
 
 .navbar-list-elem.active {
-    background-color:#F0C556;
-    
+    background-color: #F0C556;
+
 }
-a.active{
+
+a.active {
     color: #7E5230;
+}
+
+#title-name {
+    margin: auto;
+    padding-top: 20px;
+    width: fit-content;
+    /*border: 3px solid green;
+    padding: 10px;
+    background-color: aquamarine;*/
+
 }
 
 .title-name-Bruna,
@@ -86,15 +97,34 @@ a.active{
 
 }
 
+
 .runa-title {
     color: #F0C556;
 }
 
 .home-page {
+    padding-top: 112px;
     /*background-image: linear-gradient(linear-gradient(#F7ECD5, #FFFAEF););*/
     background-color: #FFFAEF;
+    height:100%;
+}
+#intro {
+    text-align: center;
+    
+}
+#text{
+    font-size: 16px;
+    width: 20px;
 }
 
+
+
+h3 {
+    font-size: 25px;
+    font-family: 'BrixtonRg';
+    font-weight: normal;
+    color: #CC925C;
+}
 
 .noscroll {
     overflow-y: scroll;
@@ -112,8 +142,8 @@ a.active{
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
-body {
-    padding-top: 112px;
+body,html {
+    height: 100%;
 }
 
 a {
