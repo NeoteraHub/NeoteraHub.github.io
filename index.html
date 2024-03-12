@@ -1,69 +1,45 @@
 <!DOCTYPE html>
 <html>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function () {
+        $('a').each(function () {
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
 
 <head>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="fixed-navbar">
+    <!--TOP NAV BAR SECTION-->
+    <div id="nav_bar">
         <ul class="navbar-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="index.html">Contact</a></li>
+            <li class="navbar-list-elem"><a href="index.html">Home</a></li>
+            <li class="navbar-list-elem"><a href="inwdex.html">About</a></li>
+            <li class="navbar-list-elem"><a href="indwex.html">Work</a></li>
+            <li class="navbar-list-elem"><a href="indwdex.html">Projects</a></li>
+            <li class="navbar-list-elem"><a href="inddex.html">Contact</a></li>
         </ul>
     </div>
-
-    <h1>Hello World</h1>
-    <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-    <h1>BRUNA SANTOS</h1>
-    <h3>Who am I?</h3>
-    <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-        visual part of things!</p>
-        <h1>Hello World</h1>
-        <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-        <h1>BRUNA SANTOS</h1>
-        <h3>Who am I?</h3>
-        <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-            visual part of things!</p>
+    <div class="noscroll">
+        <div class="home-page">
+            <div>
+                <h1 class="title-name-Bruna">B<span class="runa-title">RUNA</span></h1>
+                <h1 class="title-name-Santos">SANTOS</h1>
+            </div>
             <h1>Hello World</h1>
             <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-            <h1>BRUNA SANTOS</h1>
+
             <h3>Who am I?</h3>
-            <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
+            <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for
+                the
                 visual part of things!</p>
-                <h1>Hello World</h1>
-                <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-                <h1>BRUNA SANTOS</h1>
-                <h3>Who am I?</h3>
-                <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-                    visual part of things!</p>
-                    <h1>Hello World</h1>
-                    <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-                    <h1>BRUNA SANTOS</h1>
-                    <h3>Who am I?</h3>
-                    <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-                        visual part of things!</p>
-                        <h1>Hello World</h1>
-                        <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-                        <h1>BRUNA SANTOS</h1>
-                        <h3>Who am I?</h3>
-                        <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-                            visual part of things!</p>
-                            <h1>Hello World</h1>
-                            <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-                            <h1>BRUNA SANTOS</h1>
-                            <h3>Who am I?</h3>
-                            <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-                                visual part of things!</p>
-                                <h1>Hello World</h1>
-                                <p>My name is Neotera and this little website is hosted with GitHub Pages.</p>
-                                <h1>BRUNA SANTOS</h1>
-                                <h3>Who am I?</h3>
-                                <p>Also known online as Neotera or Runa, I’m a Computer Science and Engeneering student that as a love for the
-                                    visual part of things!</p>
+        </div>
 </body>
 
 </html>
