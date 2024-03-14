@@ -71,12 +71,14 @@ body {
     padding-right: 25px;
     color: #CC925C;
     font-family: 'BrixtonRg';
+    transition: background-color 0.35s;
 
 }
 
 .navbar-list-elem:hover {
 
     background-color: #f0c4567c;
+    transition: background-color 0.35s;
 
 
 }
@@ -132,10 +134,12 @@ a.active {
     font-family: 'OpenSans-Regular';
     font-size: 20px;
     /*width: 20px;*/
-    
+
 }
 
-
+p{
+    margin: 0%;
+}
 
 h3 {
     font-size: 25px;
@@ -159,6 +163,11 @@ h3 {
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
+
+#gradient-separator {
+    background-image: linear-gradient(#FFFAEF,#F7ECD5);
+    height: 160px;
+}
 
 body,
 html {
