@@ -1,3 +1,21 @@
+
+.content-main{
+    max-width: 700px;       /* limits line width for readability */
+  margin: 1rem auto;      /* auto left/right margins center it */
+  padding: 0 1.5rem;      /* small padding so text doesn't touch edges */
+  background: #f9f7f3;    /* optional: subtle background */
+  border-radius: 10px;    /* optional: rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* optional: soft shadow */
+}
+
+body {
+  background-color: #856f3a;
+  background-image: 
+    linear-gradient(#fdd38a 2px, transparent 1px),
+    linear-gradient(90deg, #fdd38a 2px, transparent 1px);
+  background-size: 35px 35px; /* size of each square */
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -5,6 +23,9 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+* {
+    font-family: ms ui gothic;
+  }
 
 .sec1 {
   grid-area: 1 / 1 / 2 / 3;
@@ -51,6 +72,7 @@
 }
 
 body {
+    padding-top:112px;
     display: block;
     margin: 0px;
 }
@@ -107,14 +129,6 @@ body {
 
 }
 
-.navbar-list-elem.active {
-    background-color: #F0C556;
-
-}
-
-a.active {
-    color: #7E5230;
-}
 
 #title-name {
     margin: auto;
@@ -126,33 +140,6 @@ a.active {
 
 }
 
-.title-name-Bruna,
-.title-name-Santos {
-    font-family: 'Migra-Extrabold';
-    font-size: 105px;
-    color: #3B2D24;
-    margin: 0%;
-
-}
-
-
-.runa-title {
-    color: #F0C556;
-    font-family: 'BrixtonSansRg';
-    font-weight: normal;
-}
-
-.home-page {
-    padding-top: 112px;
-    /*background-image: linear-gradient(linear-gradient(#F7ECD5, #FFFAEF););*/
-    background-color: #FFFAEF;
-    height: 100%;
-}
-
-#intro {
-    text-align: center;
-
-}
 
 .text {
     font-family: 'OpenSans-Regular';
@@ -165,28 +152,6 @@ p{
     margin: 0%;
 }
 
-h3 {
-    font-size: 25px;
-    font-family: 'BrixtonRg';
-    font-weight: normal;
-    color: #CC925C;
-}
-
-.noscroll {
-    overflow-y: scroll;
-    /* Add the ability to scroll */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.noscroll::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
 
 #gradient-separator {
     background-image: linear-gradient(#FFFAEF,#F7ECD5);
@@ -201,7 +166,7 @@ h3 {
 body,
 html {
     height: 100%;
-    background-color: #F7ECD5;
+    background-color: #f7e1a9;
 }
 
 a {
@@ -222,4 +187,52 @@ a:hover {
 
 a:active {
     text-decoration: none;
+}
+.image-window {
+  --bg-main: #e6dfd7;
+  --bg-header: #b9ac9d;
+  --border-color: #3e383d;
+  --font-color: #222;
+  --font-family: "Inter", sans-serif;
+margin: 3px;
+  display: inline-block;
+  border: 2px solid var(--border-color);
+  background: var(--bg-main);
+  font-family: var(--font-family);
+  color: var(--font-color);
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Title bar */
+.window-header {
+  background: var(--bg-header);
+  border-bottom: 2px solid var(--border-color);
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title text */
+.window-title {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Button icons (− ☐ ×) */
+.window-buttons span {
+  margin-left: 10px;
+  cursor: default;
+  font-size: 1em;
+  color: var(--font-color);
+}
+
+/* Image area */
+.image-window img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: var(--bg-main);
 }
