@@ -164,6 +164,7 @@ h1{
   align-items: start;
   gap: 2rem;
   flex-wrap: wrap;
+  
 }
 
 .text {
@@ -254,10 +255,23 @@ a:active {
 .window-body {
   padding:4px; 
 }
+.window-body-pair {
+  padding:4px; 
+}
+
 /* Image area */
 .image-window img {
   display: block;
   width: 100%;
+  height: auto;
+ 
+  background: var(--bg-main);
+  object-fit: contain;
+}
+/* Image area */
+.window-body-pair img {
+  display: inline;
+  width: 49%;
   height: auto;
  
   background: var(--bg-main);
