@@ -30,6 +30,9 @@ body {
     display: block;
     margin: 0px;
 }
+p {
+    font-family: ms ui gothic;
+  }
 
 #nav_bar {
     background-color: aqua;
